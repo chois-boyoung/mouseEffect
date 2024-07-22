@@ -225,6 +225,12 @@
 
             //cursor 값을 px이 아니라 vw로 할 경우
             // gsap.to(".cursor", {duration:0.5, left: e.pageX - width, top: e.pageY - height})
+
+            const pageX = e.pageX;
+            const pageY = e.pageY;
+
+            $(".pageX").text(pageX);
+            $(".pageY").text(pageY);
         });
     </script>
 </body>
